@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_facebook"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:text="Facebook"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="6dp"/>
+
+    <Button
+        android:id="@+id/btn_instagram"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:text="Instagram"
+        android:layout_marginRight="6dp" />
+
+    <Button
+        android:id="@+id/btn_github"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:text="Github" />
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/btn_facebook"-->
+<!--        android:layout_width="130dp"-->
+<!--        android:layout_height="130dp"-->
+<!--        android:layout_marginRight="9dp"-->
+<!--        android:background="@drawable/facebook"/>-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/btn_instagram"-->
+<!--        android:layout_width="130dp"-->
+<!--        android:layout_height="130dp"-->
+<!--        android:layout_marginRight="9dp"-->
+<!--        android:background="@drawable/instagram" />-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/btn_github"-->
+<!--        android:layout_width="130dp"-->
+<!--        android:layout_height="130dp"-->
+<!--        android:background="@drawable/github" />-->
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/img_facebook"-->
+<!--        android:layout_width="130dp"-->
+<!--        android:layout_height="130dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:src="@drawable/facebook"/>-->
+<!--    <ImageView-->
+<!--        android:id="@+id/img_instagram"-->
+<!--        android:layout_width="130dp"-->
+<!--        android:layout_height="130dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:src="@drawable/instagram"/>-->
+<!--    <ImageView-->
+<!--        android:id="@+id/img_github"-->
+<!--        android:layout_width="130dp"-->
+<!--        android:layout_height="130dp"-->
+<!--        android:src="@drawable/github"/>-->
+
+</LinearLayout>
