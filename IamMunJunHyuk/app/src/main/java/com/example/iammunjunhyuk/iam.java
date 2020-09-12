@@ -15,6 +15,7 @@ public class iam extends AppCompatActivity {
 
     ImageView flag;
     Button home;
+    ImageView ad;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -35,6 +36,15 @@ public class iam extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(iam.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ad = (ImageView)findViewById(R.id.ad);
+        ad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(iam.this, ad.class);
                 startActivity(intent);
             }
         });

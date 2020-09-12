@@ -2,8 +2,10 @@ package com.example.iammunjunhyuk;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -16,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     TextView cash;
     Button sns;
     Button me;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "잔액이 부족합니다.", Toast.LENGTH_SHORT).show();
             }
         });
+
 
         hit = (ImageView)findViewById(R.id.brg);
         hit.setOnClickListener(new View.OnClickListener() {
