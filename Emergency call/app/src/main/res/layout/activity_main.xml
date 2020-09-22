@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="문준혁"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="344dp" />
+    <Button
+        android:id="@+id/police"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="경찰"/>
+    <EditText
+        android:id="@+id/Num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="전화번호를 입력하세요"/>
+    <Button
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전화 연결"/>
+</LinearLayout>
