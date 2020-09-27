@@ -9,8 +9,9 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btn_clear, btn_one, btn_two, btn_three, btn_four, btn_five, btn_six, btn_seven, btn_eight, btn_nine, btn_plus, btn_minus, btn_multiply, btn_division, btn_equal;
+    Button btn_clear, btn_one, btn_two, btn_three, btn_four, btn_five, btn_six, btn_seven, btn_eight, btn_nine, btn_plus, btn_minus, btn_multiply, btn_division, btn_equal, btn_zezero, btn_reamin, btn_backspace;
     TextView txt_result;
+    String result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,44 +33,110 @@ public class MainActivity extends AppCompatActivity {
         btn_division = findViewById(R.id.division);
         btn_equal = findViewById(R.id.equal);
         btn_clear = findViewById(R.id.clear);
+        btn_zezero = findViewById(R.id.zerozero);
+        btn_reamin = findViewById(R.id.remain);
+        btn_backspace = findViewById(R.id.backspace);
     }
 
     public void buttonClick(View view) {
         if (view.getId() == R.id.clear){
-            txt_result.setText(" ");
+            result = " ";
+            txt_result.setText(result);
         }
 
 
         if (view.getId() == R.id.one){
-            txt_result.setText("1");
+            result = txt_result.getText().toString();
+            result += "1";
+            txt_result.setText(result);
         }
         else if (view.getId() == R.id.two){
-            txt_result.setText("2");
+            result = txt_result.getText().toString();
+            result += "2";
+            txt_result.setText(result);
         }
         else if (view.getId() == R.id.three){
-            txt_result.setText("3");
+            result = txt_result.getText().toString();
+            result += "3";
+            txt_result.setText(result);
         }
         else if (view.getId() == R.id.four){
-            txt_result.setText("4");
+            result = txt_result.getText().toString();
+            result += "4";
+            txt_result.setText(result);
         }
         else if (view.getId() == R.id.five){
-            txt_result.setText("5");
+            result = txt_result.getText().toString();
+            result += "5";
+            txt_result.setText(result);
         }
         else if (view.getId() == R.id.six){
-            txt_result.setText("6");
+            result = txt_result.getText().toString();
+            result += "6";
+            txt_result.setText(result);
         }
         else if (view.getId() == R.id.seven){
-            txt_result.setText("7");
+            result = txt_result.getText().toString();
+            result += "7";
+            txt_result.setText(result);
         }
         else if (view.getId() == R.id.eight){
-            txt_result.setText("8");
+            result = txt_result.getText().toString();
+            result += "8";
+            txt_result.setText(result);
         }
         else if (view.getId() == R.id.nine){
-            txt_result.setText("9");
+            result = txt_result.getText().toString();
+            result += "9";
+            txt_result.setText(result);
         }
         else if (view.getId() == R.id.zero){
-            txt_result.setText("0");
+            result = txt_result.getText().toString();
+            result += "0";
+            txt_result.setText(result);
+        }
+        else if (view.getId() == R.id.zerozero){
+            result = txt_result.getText().toString();
+            result += "00";
+            txt_result.setText(result);
         }
 
+        if (view.getId() == R.id.plus){
+            result = txt_result.getText().toString();
+            result += "+";
+            txt_result.setText(result);
+        }
+        else if(view.getId() == R.id.minus){
+            result = txt_result.getText().toString();
+            result += "-";
+            txt_result.setText(result);
+        }
+        else if(view.getId() == R.id.multiply){
+            result = txt_result.getText().toString();
+            result += "×";
+            txt_result.setText(result);
+        }
+        else if (view.getId() == R.id.division){
+            result = txt_result.getText().toString();
+            result += "÷";
+            txt_result.setText(result);
+        }
+        else if (view.getId() == R.id.remain){
+            result = txt_result.getText().toString();
+            result += "%";
+            txt_result.setText(result);
+        }
+
+        if (view.getId() == R.id.equal){
+            result = txt_result.getText().toString();
+            result += "=";
+            txt_result.setText(result);
+        }
+
+        if (view.getId() == R.id.backspace){
+            result = txt_result.getText().toString();
+
+            result = result/ 10;
+        }
     }
 }

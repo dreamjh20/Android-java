@@ -9,9 +9,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="410dp"
+        android:layout_height="210dp"
         android:orientation="vertical"
-        android:layout_weight="2">
+        android:layout_weight="3">
 
         <TextView
             android:id="@+id/result"
@@ -29,6 +29,46 @@
             android:layout_height="3dp"/>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="2dp">
+
+        <Button
+
+            android:layout_width="95dp"
+            android:layout_height="70dp"
+            android:layout_weight="1.5"
+            android:onClick="buttonClick"
+            android:text="M"
+            android:textSize="20sp" />
+
+        <Button
+            android:onClick="buttonClick"
+            android:id="@+id/clear"
+            android:layout_width="95dp"
+            android:layout_height="70dp"
+            android:text="C"
+            android:textSize="20sp"
+            android:layout_weight="1.5"/>
+        <Button
+            android:onClick="buttonClick"
+            android:id="@+id/backspace"
+            android:layout_width="95dp"
+            android:layout_height="70dp"
+            android:text="←"
+            android:textSize="20sp"
+            android:layout_weight="1.5"/>
+        <Button
+            android:onClick="buttonClick"
+            android:id="@+id/plus"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:text="+"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -61,10 +101,10 @@
             android:layout_weight="1.5"/>
         <Button
             android:onClick="buttonClick"
-            android:id="@+id/plus"
+            android:id="@+id/minus"
             android:layout_width="80dp"
             android:layout_height="70dp"
-            android:text="+"
+            android:text="-"
             android:textSize="20sp"
             android:layout_weight="1"/>
     </LinearLayout>
@@ -101,11 +141,11 @@
             android:layout_weight="1.5"/>
         <Button
             android:onClick="buttonClick"
-            android:id="@+id/minus"
+            android:id="@+id/multiply"
             android:layout_width="80dp"
             android:layout_height="70dp"
             android:textSize="20sp"
-            android:text="-"
+            android:text="×"
             android:layout_weight="1"/>
 
 
@@ -145,11 +185,11 @@
 
     <Button
         android:onClick="buttonClick"
-        android:id="@+id/multiply"
+        android:id="@+id/division"
         android:layout_width="80dp"
         android:layout_height="70dp"
         android:textSize="20sp"
-        android:text="×"
+        android:text="÷"
         android:layout_weight="1" />
     </LinearLayout>
 
@@ -159,14 +199,7 @@
         android:orientation="horizontal"
         android:layout_marginBottom="2dp">
 
-        <Button
-            android:onClick="buttonClick"
-            android:id="@+id/clear"
-            android:layout_width="95dp"
-            android:layout_height="70dp"
-            android:text="C"
-            android:textSize="20sp"
-            android:layout_weight="1.5"/>
+
         <Button
             android:onClick="buttonClick"
             android:id="@+id/zero"
@@ -177,6 +210,13 @@
             android:layout_weight="1.5"/>
         <Button
             android:onClick="buttonClick"
+            android:id="@+id/zerozero"
+            android:layout_width="95dp"
+            android:layout_height="70dp"
+            android:text="00"
+            android:textSize="20sp"
+            android:layout_weight="1.5"/>
+        <Button
             android:id="@+id/equal"
             android:layout_width="95dp"
             android:layout_height="70dp"
@@ -185,13 +225,12 @@
             android:layout_weight="1.5"/>
         <Button
             android:onClick="buttonClick"
-            android:id="@+id/division"
+            android:id="@+id/remain"
             android:layout_width="80dp"
             android:layout_height="70dp"
-            android:text="÷"
+            android:text="%"
             android:textSize="20sp"
             android:layout_weight="1"/>
     </LinearLayout>
-
 
 </LinearLayout>
