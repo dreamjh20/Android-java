@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ImageView p_img, c_img;
+    private ImageView p_img, c_img, c_face;
     private TextView com, player;
     private int cs, ps;
     private int rand_num = 0;
@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         player = findViewById(R.id.player_score);
         p_img = findViewById(R.id.img_player);
         c_img = findViewById(R.id.img_com);
+        c_face = findViewById(R.id.com_face);
 //        cs = Integer.parseInt(com.getText().toString()) + 1;
 //        ps = Integer.parseInt(com.getText().toString()) + 1;
 
@@ -49,16 +50,19 @@ public class MainActivity extends AppCompatActivity {
                 System.out.println(rand_num);
                 if (rand_num == 1){
                     c_img.setImageResource(R.drawable.tilted_paper);
+                    c_face.setImageResource(R.drawable.sinsinnani);
                 }
                 else if (rand_num == 2){
                     c_img.setImageResource(R.drawable.tilted_rock);
                     ps = Integer.parseInt(player.getText().toString()) + 1;
                     player.setText(Integer.toString(ps));
+                    c_face.setImageResource(R.drawable.lose);
                 }
                 else {
                     c_img.setImageResource(R.drawable.tilted_scissors);
                     cs = Integer.parseInt(com.getText().toString()) + 1;
                     com.setText(Integer.toString(cs));
+                    c_face.setImageResource(R.drawable.win);
                 }
             }
         });
@@ -71,14 +75,17 @@ public class MainActivity extends AppCompatActivity {
                     c_img.setImageResource(R.drawable.tilted_paper);
                     cs = Integer.parseInt(com.getText().toString()) + 1;
                     com.setText(Integer.toString(cs));
+                    c_face.setImageResource(R.drawable.win);
                 }
                 else if (rand_num == 2){
                     c_img.setImageResource(R.drawable.tilted_rock);
+                    c_face.setImageResource(R.drawable.sinsinnani);
                 }
                 else {
                     c_img.setImageResource(R.drawable.tilted_scissors);
                     ps = Integer.parseInt(player.getText().toString()) + 1;
                     player.setText(Integer.toString(ps));
+                    c_face.setImageResource(R.drawable.lose);
                 }
             }
         });
@@ -91,14 +98,18 @@ public class MainActivity extends AppCompatActivity {
                     c_img.setImageResource(R.drawable.tilted_paper);
                     ps = Integer.parseInt(player.getText().toString()) + 1;
                     player.setText(Integer.toString(ps));
+                    c_face.setImageResource(R.drawable.lose);
                 }
                 else if (rand_num == 2){
                     c_img.setImageResource(R.drawable.tilted_rock);
                     cs = Integer.parseInt(com.getText().toString()) + 1;
                     com.setText(Integer.toString(cs));
+                    c_face.setImageResource(R.drawable.win);
                 }
-                else
+                else {
                     c_img.setImageResource(R.drawable.tilted_scissors);
+                    c_face.setImageResource(R.drawable.sinsinnani);
+                }
             }
         });
 
