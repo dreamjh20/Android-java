@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -16,15 +17,12 @@ import java.util.Date;
 public class MainActivity extends AppCompatActivity {
 
     long now = System.currentTimeMillis();
-    // 현재시간을 date 변수에 저장한다.
     Date date = new Date(now);
-    // 시간을 나타냇 포맷을 정한다 ( yyyy/MM/dd 같은 형태로 변형 가능 )
     SimpleDateFormat dtNow = new SimpleDateFormat("MM"+"월 "+"dd"+"일 "+"EE"+"요일");
     String formatDate = dtNow.format(date);
-    //SimpleDateFormat tmNow = new SimpleDateFormat("HH:mm");
-    //String formatTime = tmNow.format(date);
     TextView dateNow, timeNow;
     ImageButton cam;
+    Button touch;
 
 //    public boolean onTouchEvent(View view, MotionEvent event) {
 //      return super.onTouchEvent(event);
@@ -70,6 +68,14 @@ public class MainActivity extends AppCompatActivity {
         dateNow.setText(formatDate);
         //.setText(formatTime);
 
+        touch = findViewById(R.id.touch1);
+//        touch.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(MainActivity.this, PasswordActivity.class);
+//                startActivity(intent);
+//            }
+//        });
         cam = findViewById(R.id.cam_btn);
         cam.setOnClickListener(new View.OnClickListener() {
             @Override
