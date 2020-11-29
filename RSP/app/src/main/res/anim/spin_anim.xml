@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <rotate
+        android:interpolator="@android:anim/linear_interpolator"
+        android:repeatCount="infinite"
+        android:duration="4000"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:fromDegrees="0"
+        android:toDegrees="360">
+    </rotate>
+<!--    <rotate-->
+<!--        android:interpolator="@android:anim/linear_interpolator"-->
+<!--        android:repeatCount="infinite"-->
+<!--        android:duration="4000"-->
+<!--        android:pivotX="50%"-->
+<!--        android:pivotY="50%"-->
+<!--        android:fromDegrees="45"-->
+<!--        android:toDegrees="0">-->
+<!--    </rotate>-->
+<!--    <rotate-->
+<!--        android:interpolator="@android:anim/linear_interpolator"-->
+<!--        android:repeatCount="infinite"-->
+<!--        android:duration="4000"-->
+<!--        android:pivotX="50%"-->
+<!--        android:pivotY="50%"-->
+<!--        android:fromDegrees="0"-->
+<!--        android:toDegrees="315">-->
+<!--    </rotate>-->
+<!--    <rotate-->
+<!--    android:interpolator="@android:anim/linear_interpolator"-->
+<!--    android:repeatCount="infinite"-->
+<!--    android:duration="4000"-->
+<!--    android:pivotX="50%"-->
+<!--    android:pivotY="50%"-->
+<!--    android:fromDegrees="315"-->
+<!--    android:toDegrees="0">-->
+<!--    </rotate>-->
+</set>
